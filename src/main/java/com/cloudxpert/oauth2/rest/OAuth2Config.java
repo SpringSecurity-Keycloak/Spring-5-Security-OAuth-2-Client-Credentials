@@ -29,15 +29,19 @@ public class OAuth2Config {
      * @return
      */
     @Bean
-    public OAuth2AuthorizedClientManager authorizedClientManager(ClientRegistrationRepository clientRegistrationRepository,OAuth2AuthorizedClientService authorizedClientService) {
+    public OAuth2AuthorizedClientManager authorizedClientManager(ClientRegistrationRepository clientRegistrationRepository
+    															,OAuth2AuthorizedClientService authorizedClientService) {
     
         OAuth2AuthorizedClientProvider authorizedClientProvider = OAuth2AuthorizedClientProviderBuilder.builder()
-                                                                    .clientCredentials()
-                                                                    .build();
+                                                                  .clientCredentials()
+                                                                  .build();
 
-        AuthorizedClientServiceOAuth2AuthorizedClientManager authorizedClientManager = new AuthorizedClientServiceOAuth2AuthorizedClientManager(clientRegistrationRepository, authorizedClientService);
+        AuthorizedClientServiceOAuth2AuthorizedClientManager authorizedClientManager = 
+        													 new AuthorizedClientServiceOAuth2AuthorizedClientManager(
+        													 clientRegistrationRepository, authorizedClientService);
         authorizedClientManager.setAuthorizedClientProvider(authorizedClientProvider);
     
+        
         return authorizedClientManager;
     }
     
@@ -49,7 +53,10 @@ public class OAuth2Config {
     @Bean
     WebClient webClient(OAuth2AuthorizedClientManager authorizedClientManager) {
         
-        ServletOAuth2AuthorizedClientExchangeFilterFunction oauth2Client = new ServletOAuth2AuthorizedClientExchangeFilterFunction(authorizedClientManager);
+        ServletOAuth2AuthorizedClientExchangeFilterFunction oauth2Client = 
+        													new ServletOAuth2AuthorizedClientExchangeFilterFunction(
+        													authorizedClientManager);
+        			
         oauth2Client.setDefaultClientRegistrationId("studentservice");
         return WebClient.builder()
                 .apply(oauth2Client.oauth2Configuration())
@@ -61,15 +68,10 @@ public class OAuth2Config {
      * Log request for debugging purposes
      * @return
      */
-    private ExchangeFilterFunction logRequest() {
+    private static ExchangeFilterFunction logRequest() {
         return ExchangeFilterFunction.ofRequestProcessor(clientRequest -> {
-            StringBuilder requestBody = new StringBuilder("Request: \n");
-            clientRequest
-              .headers()
-              .forEach((name,values) -> values.forEach(v -> requestBody.append( v.toString() +"\n")));
-            
-            log.debug(requestBody.toString());
-            
+            log.info("Request: {} {}", clientRequest.method(), clientRequest.url());
+            clientRequest.headers().forEach((name, values) -> values.forEach(value -> log.info("{}={}", name, value)));
             
             return Mono.just(clientRequest);
         });
