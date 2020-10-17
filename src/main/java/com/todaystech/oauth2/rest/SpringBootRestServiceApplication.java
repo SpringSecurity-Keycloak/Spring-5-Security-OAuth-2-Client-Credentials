@@ -1,4 +1,4 @@
-package com.cloudxpert.oauth2.rest;
+package com.todaystech.oauth2.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

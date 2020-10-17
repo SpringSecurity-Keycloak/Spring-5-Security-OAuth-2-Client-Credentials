@@ -1,4 +1,4 @@
-package com.cloudxpert.oauth2.rest.client;
+package com.todaystech.oauth2.rest.client;
 
 import java.time.Duration;
 import java.util.Optional;
@@ -11,7 +11,7 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import com.cloudxpert.oauth2.rest.model.StudentResource;
+import com.todaystech.oauth2.rest.model.StudentResource;
 
 @Component
 public class StudentApi {

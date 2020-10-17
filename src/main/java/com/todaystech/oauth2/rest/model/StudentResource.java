@@ -1,4 +1,4 @@
-package com.cloudxpert.oauth2.rest.model;
+package com.todaystech.oauth2.rest.model;
 
 import org.springframework.validation.annotation.Validated;
 

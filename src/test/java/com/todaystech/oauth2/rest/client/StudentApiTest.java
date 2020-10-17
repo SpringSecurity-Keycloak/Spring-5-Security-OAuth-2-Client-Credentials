@@ -1,4 +1,4 @@
-package com.cloudxpert.oauth2.rest.client;
+package com.todaystech.oauth2.rest.client;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -12,7 +12,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.cloudxpert.oauth2.rest.model.StudentResource;
+import com.todaystech.oauth2.rest.client.StudentApi;
+import com.todaystech.oauth2.rest.model.StudentResource;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
