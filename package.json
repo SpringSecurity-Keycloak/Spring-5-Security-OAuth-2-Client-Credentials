@@ -1,0 +1,22 @@
+{
+  "name": "spring-5-security-oauth-2-client-credentials",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials.git"
+  },
+  "author": "Dennis Chacko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials/issues"
+  },
+  "homepage": "https://github.com/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials#readme",
+  "devDependencies": {
+    "@appnest/readme": "^1.2.7"
+  }
+}
