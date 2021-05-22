@@ -30,6 +30,10 @@ jobs:
 workflows:
   build-test-deploy:
     jobs:
-      - heroku/deploy-via-git:
+      - build:
           context:
             - Heroku
+            - SonarCloud
+      - heroku/deploy-via-git:
+          requires:
+            - build
