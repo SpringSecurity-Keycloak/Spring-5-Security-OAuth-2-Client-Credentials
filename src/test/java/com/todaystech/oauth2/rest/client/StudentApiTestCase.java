@@ -20,15 +20,14 @@ import okhttp3.mockwebserver.MockWebServer;
 
 import com.todaystech.oauth2.rest.model.StudentResource;
 
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @ActiveProfiles({ "test" })
-public class StudentApiTest {
+public class StudentApiTestCase {
 
 	@Autowired
 	StudentApi studentApi;
-	
+
 	private MockOAuth2Server oauthServer = new MockOAuth2Server();
 	private MockWebServer mockApiService = null;
 

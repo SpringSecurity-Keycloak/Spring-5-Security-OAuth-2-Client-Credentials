@@ -15,11 +15,12 @@
 	<name>Spring 5 Securit Oauth2 Client Credentials</name>
 	<description>Spring 5 Securit Oauth2 Client Credentials</description>
 	<properties>
-		<java.version>15</java.version>
+		<java.version>13</java.version>
 		<lombok.version>1.18.20</lombok.version>
  		<sonar.projectKey>SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials</sonar.projectKey>
   	<sonar.organization>springsecurity-keycloak</sonar.organization>
   	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<maven.compiler.release>13</maven.compiler.release>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -46,12 +47,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>io.projectreactor</groupId>
@@ -66,11 +61,6 @@
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
