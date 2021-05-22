@@ -1,9 +1,38 @@
 {
+  "logo": {
+    "src": "https://github.com/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials/blob/master/documentation/spring-5-security-oauth-2-client-logo.png",
+    "width": "150"
+  },
   "badges": [
     {
       "alt": "Build",
       "url": "https://app.circleci.com/pipelines/github/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials",
       "img": "https://circleci.com/gh/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials.svg?style=shield"
+    },
+    {
+      "alt": "Coverage",
+      "url": "https://sonarcloud.io/dashboard?id=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials",
+      "img": "https://sonarcloud.io/api/project_badges/measure?project=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials&metric=coverage"
+    },
+    {
+      "alt": "Quality Gate Status",
+      "url": "https://sonarcloud.io/dashboard?id=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials",
+      "img": "https://sonarcloud.io/api/project_badges/measure?project=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials&&metric=alert_status"
+    },
+    {
+      "alt": "Reliability Rating",
+      "url": "https://sonarcloud.io/dashboard?id=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials",
+      "img": "https://sonarcloud.io/api/project_badges/measure?project=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials&&metric=reliability_rating"
+    },
+    {
+      "alt": "Security Rating",
+      "url": "https://sonarcloud.io/dashboard?id=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials",
+      "img": "https://sonarcloud.io/api/project_badges/measure?project=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials&&metric=security_rating"
+    },
+    {
+      "alt": "Vulnerabilities",
+      "url": "https://sonarcloud.io/dashboard?id=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials",
+      "img": "https://sonarcloud.io/api/project_badges/measure?project=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials&&metric=vulnerabilities"
     }
   ]
 }
