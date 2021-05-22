@@ -36,9 +36,8 @@ public class OAuth2Config {
                                                                   .clientCredentials()
                                                                   .build();
 
-        AuthorizedClientServiceOAuth2AuthorizedClientManager authorizedClientManager = 
-        													 new AuthorizedClientServiceOAuth2AuthorizedClientManager(
-        													 clientRegistrationRepository, authorizedClientService);
+        var authorizedClientManager = new AuthorizedClientServiceOAuth2AuthorizedClientManager(
+                clientRegistrationRepository, authorizedClientService);
         authorizedClientManager.setAuthorizedClientProvider(authorizedClientProvider);
 
         return authorizedClientManager;
@@ -52,9 +51,7 @@ public class OAuth2Config {
     @Bean
     WebClient webClient(OAuth2AuthorizedClientManager authorizedClientManager) {
         
-        ServletOAuth2AuthorizedClientExchangeFilterFunction oauth2Client = 
-        													new ServletOAuth2AuthorizedClientExchangeFilterFunction(
-        													authorizedClientManager);
+        var oauth2Client = new ServletOAuth2AuthorizedClientExchangeFilterFunction(authorizedClientManager);
         			
         oauth2Client.setDefaultClientRegistrationId("studentservice");
         return WebClient.builder()

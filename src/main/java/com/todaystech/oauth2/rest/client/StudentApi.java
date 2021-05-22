@@ -28,7 +28,7 @@ public class StudentApi {
 	 * @return the new student
 	 */
 	public Optional<StudentResource> createNewStudent(StudentResource student) {
-		Duration timeoutIn10Seconds = Duration.ofSeconds(10);
+		var timeoutIn10Seconds = Duration.ofSeconds(10);
 		return webclient
 				.method(HttpMethod.POST)
 				.uri(serviceEndpoint)
