@@ -40,8 +40,7 @@ public class OAuth2Config {
         													 new AuthorizedClientServiceOAuth2AuthorizedClientManager(
         													 clientRegistrationRepository, authorizedClientService);
         authorizedClientManager.setAuthorizedClientProvider(authorizedClientProvider);
-    
-        
+
         return authorizedClientManager;
     }
     
@@ -60,7 +59,7 @@ public class OAuth2Config {
         oauth2Client.setDefaultClientRegistrationId("studentservice");
         return WebClient.builder()
                 .apply(oauth2Client.oauth2Configuration())
-                .filter(this.logRequest())
+                .filter(OAuth2Config.logRequest())
                 .build();
     }
     
