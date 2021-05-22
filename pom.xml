@@ -20,6 +20,10 @@
  		<sonar.projectKey>SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials</sonar.projectKey>
   	<sonar.organization>springsecurity-keycloak</sonar.organization>
   	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.exclusions>
+			**/StudentResource.java,
+			**/SpringBootRestServiceApplication.java
+		</sonar.exclusions>
 		<maven.compiler.release>13</maven.compiler.release>
 	</properties>
 	<dependencies>
