@@ -16,16 +16,10 @@ jobs:
           version: 19.03.13
           docker_layer_caching: false
 
-      # Run unit tests and coverage reports
-      - run: mvn verify sonar:sonar
-      # build and push Docker image
+      # build, run unit test cases and sonar quality gate checks
       - run: mvn clean package
-      - run: sudo rm -f ~/.docker/config.json
-      - run: |
-          docker build -t $DOCKERHUB_USER/studentapi-client .
-          echo $DOCKERHUB_PASSWORD | docker login -u $DOCKERHUB_USER --password-stdin
-          docker push $DOCKERHUB_USER/studentapi-client
-          sudo rm -f ~/.docker/config.json
+      - run: mvn verify sonar:sonar
+
 
 workflows:
   build-test-deploy:

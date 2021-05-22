@@ -12,8 +12,8 @@
 	<groupId>com.cloudxpert</groupId>
 	<artifactId>Oauth2Client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Spring 5 Securit Oauth2 Client Credentials</name>
+	<description>Spring 5 Securit Oauth2 Client Credentials</description>
 	<properties>
 		<java.version>15</java.version>
 		<lombok.version>1.18.20</lombok.version>
