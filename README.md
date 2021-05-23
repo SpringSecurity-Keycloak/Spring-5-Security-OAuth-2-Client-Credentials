@@ -6,7 +6,7 @@
 <h1 align="center">spring-5-security-oauth-2-client-credentials</h1>
 
 <p align="center">
-		<a href="https://app.circleci.com/pipelines/github/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials"><img alt="Build" src="https://circleci.com/gh/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials.svg?style=shield" height="20"/></a>
+		<a href="https://github.com/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials/actions/workflows/build.yml"><img alt="Build" src="https://github.com/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials/actions/workflows/build.yml/badge.svg" height="20"/></a>
 <a href="https://sonarcloud.io/dashboard?id=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials"><img alt="Coverage" src="https://sonarcloud.io/api/project_badges/measure?project=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials&metric=coverage" height="20"/></a>
 <a href="https://sonarcloud.io/dashboard?id=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials"><img alt="Quality Gate Status" src="https://sonarcloud.io/api/project_badges/measure?project=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials&&metric=alert_status" height="20"/></a>
 <a href="https://sonarcloud.io/dashboard?id=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials"><img alt="Reliability Rating" src="https://sonarcloud.io/api/project_badges/measure?project=SpringSecurity-Keycloak_Spring-5-Security-OAuth-2-Client-Credentials&&metric=reliability_rating" height="20"/></a>

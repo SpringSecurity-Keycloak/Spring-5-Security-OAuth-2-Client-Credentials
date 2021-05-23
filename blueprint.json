@@ -6,8 +6,8 @@
   "badges": [
     {
       "alt": "Build",
-      "url": "https://app.circleci.com/pipelines/github/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials",
-      "img": "https://circleci.com/gh/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials.svg?style=shield"
+      "url": "https://github.com/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials/actions/workflows/build.yml",
+      "img": "https://github.com/SpringSecurity-Keycloak/Spring-5-Security-OAuth-2-Client-Credentials/actions/workflows/build.yml/badge.svg"
     },
     {
       "alt": "Coverage",
