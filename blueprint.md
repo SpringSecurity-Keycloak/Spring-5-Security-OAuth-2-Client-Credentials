@@ -11,14 +11,31 @@ Spring Boot application that uses WebClient and Spring Security's Oauth 2 suppor
 
 ## Installing and running this project
 <details>
-  <summary>Configure this application</summary>
-  
+  <summary>Accompanying Blog Post</summary>
+  <BR>
+
+  The blog post accompanying this repository is available [here](https://www.todaystechnology.org/post/secure-spring-rest-api-using-openid-connect-and-keycloak-part-4)
   
 </details>
 
 
 <details>
-  <summary>Run this Spring Boot Application</summary>
-  
+  <summary>Run this Spring Application</summary>
+  <BR>
+
+  This project is best tested by running the below command
+
+  ```bash
+  mvn clean package
+  ```
+ 
+ This should build the project and run the testcase which uses a webclient to make a secured call to a mock api. The test case starts up two servers:
+ * A mock Oauth2 service for creating tokens
+ * A mock http server that acts as our api server
+
+ The testcase creates a webclient which:
+ 1. Invokes the mock Oauth2 server and retrieve a token
+ 2. Invokes the mock api server with the token and executes an REST operation on the api
 
 </details>
+
